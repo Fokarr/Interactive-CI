@@ -1,7 +1,42 @@
-h1 {
-    color: rgb(40, 40, 40);
-    margin: 30px;
-    overflow: hidden;
-    font-size: 20px;
+.home {
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        .home__logo {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+    
+            .pronunciation {
+                opacity: 0;
+                color: var(--gray);
+            }
+        }
+    }
+}
+
+.colors {
+    display: flex;
+
+    .red {
+        background-color: var(--red);
+        width: 100%;
+        height: 100%;
+    }
+
+    .gray {
+        background-color: var(--gray);
+        width: 100%;
+        height: 100%;
+    }
+
+    .black {
+        background-color: black;
+        width: 100%;
+        height: 100%;
+    }
 }
 

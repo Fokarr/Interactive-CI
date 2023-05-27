@@ -1,0 +1,10 @@
+.nav {
+    margin-top: 20px;
+
+    &__text {
+        font-variation-settings: "wght" 800;
+        font-style: italic;
+        color: var(--gray);
+        font-size: 16px;
+    }
+}

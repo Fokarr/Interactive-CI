@@ -1,16 +1,24 @@
-import { animate } from "motion";
+import { animate, stagger } from "motion";
 
 function initializeLogoAnimation() {
-    const logo = document.getElementById("logo");
-    
-    animate(logo, {
-        opacity: [0, 1],
-        y: [20, 0],
+    const logoPieces = document.querySelectorAll(".piece");
+    console.log(logoPieces)
+    Array.from(logoPieces).forEach((piece, index) => {
+        animate(piece, {
+            opacity: 1,
+            transform: ["translateY(100px)", "translateY(0px)"],
+        }, {
+            duration: 1,
+            delay: 0.5 + index * 0.1,
+        })
+    });
+
+    animate(".pronunciation", {
+        opacity: 1,
     }, {
-        delay: 1.5,
-        easing: "ease-in-out",
         duration: 1,
-    })
+        delay: 1.5,
+    });
 }
 
 export default initializeLogoAnimation;

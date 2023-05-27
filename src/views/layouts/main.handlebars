@@ -9,14 +9,18 @@
 </head>
 <body data-barba="wrapper">
 
-    <!-- put here content that will not change between your pages, like <header> or <nav> -->
-
-    <div id="pagetransition"></div>
-    <main class="wrapper" data-barba="container">
-        {{{body}}}
-    </main>
+    <div class="wrapper">
+        <div id="loading">
+            <span class="loading__text">
+                The details are not the details.<br> They make the design.
+            </span>
+            <!--<div class="lottie"></div>-->
+        </div>
+        <div id="pagetransition"></div>
+        <main class="wrapper" data-barba="container">
+            {{{body}}}
+        </main>
+    </div>
     
-    <!-- put here content that will not change between your pages, like <footer> -->
-
 </body>
 </html>

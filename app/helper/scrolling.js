@@ -1,4 +1,4 @@
-import Lenis from '@studio-freight/lenis'
+/*import Lenis from '@studio-freight/lenis'
 
 const lenis = new Lenis({
     wheelMultiplier: 0.5,
@@ -15,4 +15,4 @@ function raf(time) {
     requestAnimationFrame(raf);
 }
 
-export default raf;
+export default raf;*/
