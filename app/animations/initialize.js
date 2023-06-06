@@ -10,7 +10,7 @@ async function initializeAnimations()  {
     initializePageTransition();
     initializeNavbarAnimation();
     // base delay of pagetransition 
-    initializeHeadingAnimation();
+    //initializeHeadingAnimation();
     initializeLogoAnimation();
     initializeLinkAnimations();
 }

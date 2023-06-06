@@ -1,4 +1,5 @@
 import { animate, stagger } from "motion";
+import CONSTANTS from "../helper/constants.js";
 import SplitType from 'split-type'
 
 function initializeHeadingAnimation() {
@@ -14,7 +15,7 @@ function initializeHeadingAnimation() {
             rotateZ: [10, 0],
         }, {
             delay: stagger(0.2),
-            easing: "ease-in-out",
+            easing: CONSTANTS.EASING.cubic,
             duration: 0.6,
         })
     });
