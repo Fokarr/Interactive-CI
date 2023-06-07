@@ -1,6 +1,6 @@
 import { animate, stagger } from "motion";
 import CONSTANTS from "../helper/constants.js";
-import SplitType from 'split-type'
+import SplitType from 'split-type';
 
 function initializeHeadingAnimation() {
     const headings = document.getElementsByTagName("h1");

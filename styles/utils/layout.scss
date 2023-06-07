@@ -3,6 +3,7 @@
     --gray: #a6a6a6;
     --white: #fcfcfc;
     --beige: #fcfaf5;
+    --black: #29000B;
     --cubicEasing: cubic-bezier(0, -0.02, 0, 1);
 }
 
@@ -45,7 +46,7 @@ section.content {
     position: absolute;
     left: 0;
     bottom: 0;
-    z-index: 1337;
+    z-index: 13337;
     background-color: var(--beige);
     display: flex;
     justify-content: center;
@@ -62,6 +63,8 @@ section.content {
 body {
     background-image: url("/public/images/bg.svg");
     height: 100vh;
+    width: 100vw;
+    overflow: hidden;
     background-color: var(--beige);
     font-family: "ABCGrow", "Helvetica Neue";
 }
